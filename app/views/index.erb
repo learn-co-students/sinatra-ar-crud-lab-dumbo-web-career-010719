@@ -1,0 +1,6 @@
+<h1>INDEX</h1>
+<% @all_articles.each do |article| %>
+title: <a href="/articles/<%=article.id%>"><%= article.title %></a> <br>
+<% end %>
+<br>
+<a href='/articles/new'>Create a new Article<a/>
